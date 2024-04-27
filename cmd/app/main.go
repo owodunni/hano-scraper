@@ -13,7 +13,6 @@ import (
 
 	_ "github.com/breml/rootcerts"
 	_ "github.com/lib/pq"
-	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/owodunni/hano-scraper/internal/config/settings"
 	"github.com/owodunni/hano-scraper/internal/data"
 	"github.com/owodunni/hano-scraper/internal/health"
@@ -21,6 +20,7 @@ import (
 	"github.com/owodunni/hano-scraper/internal/models"
 	"github.com/owodunni/hano-scraper/internal/processor"
 	"github.com/owodunni/hano-scraper/internal/server"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/qdm12/goservices"
 	"github.com/qdm12/goservices/hooks"
 	"github.com/qdm12/goservices/httpserver"
