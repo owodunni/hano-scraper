@@ -11,7 +11,7 @@ title: 'Bug: FILL THIS TEXT!'
 
 **What is the version of the program** (See the line at the top of your logs)
 
-```
+```log
 Running version latest built on 2020-03-13T01:30:06Z (commit d0f678c)
 ```
 
