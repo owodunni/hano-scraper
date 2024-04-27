@@ -5,13 +5,13 @@ import (
 	"strings"
 
 	"github.com/go-chi/chi/v5"
-	"github.com/qdm12/go-template/internal/config/settings"
-	"github.com/qdm12/go-template/internal/models"
-	"github.com/qdm12/go-template/internal/server/middlewares/cors"
-	logmware "github.com/qdm12/go-template/internal/server/middlewares/log"
-	metricsmware "github.com/qdm12/go-template/internal/server/middlewares/metrics"
-	"github.com/qdm12/go-template/internal/server/routes/build"
-	"github.com/qdm12/go-template/internal/server/routes/users"
+	"github.com/owodunni/hano-scraper/internal/config/settings"
+	"github.com/owodunni/hano-scraper/internal/models"
+	"github.com/owodunni/hano-scraper/internal/server/middlewares/cors"
+	logmware "github.com/owodunni/hano-scraper/internal/server/middlewares/log"
+	metricsmware "github.com/owodunni/hano-scraper/internal/server/middlewares/metrics"
+	"github.com/owodunni/hano-scraper/internal/server/routes/build"
+	"github.com/owodunni/hano-scraper/internal/server/routes/users"
 )
 
 func NewRouter(config settings.HTTP, logger Logger,

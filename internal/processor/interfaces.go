@@ -3,7 +3,7 @@ package processor
 import (
 	"context"
 
-	"github.com/qdm12/go-template/internal/models"
+	"github.com/owodunni/hano-scraper/internal/models"
 )
 
 type Database interface {

@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/qdm12/go-template/internal/server/httperr"
+	"github.com/owodunni/hano-scraper/internal/server/httperr"
 )
 
 // DecodeBody decodes the HTTP JSON encoded body into v.

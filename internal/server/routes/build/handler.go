@@ -3,7 +3,7 @@ package build
 
 import (
 	"github.com/go-chi/chi/v5"
-	"github.com/qdm12/go-template/internal/models"
+	"github.com/owodunni/hano-scraper/internal/models"
 )
 
 type handler struct {

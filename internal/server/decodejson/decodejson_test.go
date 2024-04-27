@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/qdm12/go-template/internal/server/contenttype"
+	"github.com/owodunni/hano-scraper/internal/server/contenttype"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/qdm12/go-template/internal/server/contenttype"
-	"github.com/qdm12/go-template/internal/server/httperr"
+	"github.com/owodunni/hano-scraper/internal/server/contenttype"
+	"github.com/owodunni/hano-scraper/internal/server/httperr"
 )
 
 // Handler to get the program build information (GET /).

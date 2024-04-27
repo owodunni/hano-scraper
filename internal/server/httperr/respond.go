@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/qdm12/go-template/internal/server/contenttype"
+	"github.com/owodunni/hano-scraper/internal/server/contenttype"
 )
 
 type errJSONWrapper struct {

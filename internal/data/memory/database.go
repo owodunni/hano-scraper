@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/qdm12/go-template/internal/models"
+	"github.com/owodunni/hano-scraper/internal/models"
 	"github.com/qdm12/goservices"
 )
 

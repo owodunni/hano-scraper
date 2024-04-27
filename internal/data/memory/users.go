@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	dataerrors "github.com/qdm12/go-template/internal/data/errors"
-	"github.com/qdm12/go-template/internal/models"
+	dataerrors "github.com/owodunni/hano-scraper/internal/data/errors"
+	"github.com/owodunni/hano-scraper/internal/models"
 )
 
 func (db *Database) CreateUser(_ context.Context, user models.User) (err error) {

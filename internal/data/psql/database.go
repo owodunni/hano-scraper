@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/qdm12/go-template/internal/config/settings"
+	"github.com/owodunni/hano-scraper/internal/config/settings"
 	"github.com/qdm12/goservices"
 )
 

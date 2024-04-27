@@ -1,4 +1,4 @@
-module github.com/qdm12/go-template
+module github.com/owodunni/hano-scraper
 
 go 1.22
 

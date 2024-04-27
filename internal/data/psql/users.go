@@ -6,8 +6,8 @@ import (
 	"errors"
 	"fmt"
 
-	dataerrors "github.com/qdm12/go-template/internal/data/errors"
-	"github.com/qdm12/go-template/internal/models"
+	dataerrors "github.com/owodunni/hano-scraper/internal/data/errors"
+	"github.com/owodunni/hano-scraper/internal/models"
 )
 
 // CreateUser inserts a user in the database.

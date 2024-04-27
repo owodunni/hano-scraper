@@ -2,10 +2,10 @@
 package data
 
 import (
-	"github.com/qdm12/go-template/internal/config/settings"
-	"github.com/qdm12/go-template/internal/data/json"
-	"github.com/qdm12/go-template/internal/data/memory"
-	"github.com/qdm12/go-template/internal/data/psql"
+	"github.com/owodunni/hano-scraper/internal/config/settings"
+	"github.com/owodunni/hano-scraper/internal/data/json"
+	"github.com/owodunni/hano-scraper/internal/data/memory"
+	"github.com/owodunni/hano-scraper/internal/data/psql"
 	"github.com/qdm12/log"
 )
 

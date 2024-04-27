@@ -12,8 +12,8 @@ import (
 	"time"
 
 	"github.com/golang/mock/gomock"
-	"github.com/qdm12/go-template/internal/config/settings"
-	"github.com/qdm12/go-template/internal/models"
+	"github.com/owodunni/hano-scraper/internal/config/settings"
+	"github.com/owodunni/hano-scraper/internal/models"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

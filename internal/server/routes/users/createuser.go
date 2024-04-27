@@ -5,10 +5,10 @@ import (
 	"errors"
 	"net/http"
 
-	"github.com/qdm12/go-template/internal/models"
-	"github.com/qdm12/go-template/internal/server/contenttype"
-	"github.com/qdm12/go-template/internal/server/decodejson"
-	"github.com/qdm12/go-template/internal/server/httperr"
+	"github.com/owodunni/hano-scraper/internal/models"
+	"github.com/owodunni/hano-scraper/internal/server/contenttype"
+	"github.com/owodunni/hano-scraper/internal/server/decodejson"
+	"github.com/owodunni/hano-scraper/internal/server/httperr"
 )
 
 // Handler for creating a user (POST /users/).

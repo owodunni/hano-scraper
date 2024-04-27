@@ -12,9 +12,9 @@ import (
 	"path/filepath"
 	"sync"
 
-	dataerrors "github.com/qdm12/go-template/internal/data/errors"
-	"github.com/qdm12/go-template/internal/data/memory"
-	"github.com/qdm12/go-template/internal/models"
+	dataerrors "github.com/owodunni/hano-scraper/internal/data/errors"
+	"github.com/owodunni/hano-scraper/internal/data/memory"
+	"github.com/owodunni/hano-scraper/internal/models"
 )
 
 // Database is the JSON file implementation of the database store.

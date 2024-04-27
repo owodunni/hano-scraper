@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 
-	dataerr "github.com/qdm12/go-template/internal/data/errors"
-	"github.com/qdm12/go-template/internal/models"
+	dataerr "github.com/owodunni/hano-scraper/internal/data/errors"
+	"github.com/owodunni/hano-scraper/internal/models"
 )
 
 var (
