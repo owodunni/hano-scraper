@@ -1,9 +1,9 @@
 version: "3.7"
 services:
-  go-template-docker:
+  hano-scraper:
     build: .
-    image: qmcgaw/go-template-docker
-    container_name: go-template-docker
+    image: owodunni/hano-scraper
+    container_name: owodunni/hano-scraper
     ports:
       - 8000:8000/tcp
     environment:
@@ -32,7 +32,7 @@ services:
     volumes:
       - go-template-docker:/var/lib/postgresql/data
     environment:
-      POSTGRES_DB: go-template-docker
+      POSTGRES_DB: hano-scraper
       POSTGRES_USER_FILE: /run/secrets/postgres_user
       POSTGRES_PASSWORD_FILE: /run/secrets/postgres_password
     secrets:
