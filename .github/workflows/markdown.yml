@@ -35,12 +35,3 @@ jobs:
       - uses: gaurav-nelson/github-action-markdown-link-check@v1
         with:
           use-quiet-mode: yes
-
-      - uses: peter-evans/dockerhub-description@v3
-        if: github.repository == 'qdm12/go-template' && github.event_name == 'push'
-        with:
-          username: qmcgaw
-          password: ${{ secrets.DOCKERHUB_PASSWORD }}
-          repository: qmcgaw/go-template-docker
-          short-description: SHORT_DESCRIPTION
-          readme-filepath: README.md

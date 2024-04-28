@@ -28,9 +28,9 @@ services:
     restart: always
 
   postgres:
-    image: postgres:14-alpine
+    image: postgres:16-alpine
     volumes:
-      - go-template-docker:/var/lib/postgresql/data
+      - hano-scraper:/var/lib/postgresql/data
     environment:
       POSTGRES_DB: hano-scraper
       POSTGRES_USER_FILE: /run/secrets/postgres_user
