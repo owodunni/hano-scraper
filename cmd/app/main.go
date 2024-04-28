@@ -132,17 +132,17 @@ func _main(ctx context.Context, buildInfo models.BuildInformation,
 		return err
 	}
 	splashLines := gosplash.MakeLines(gosplash.Settings{
-		User:          "qdm12",
-		Repository:    "go-template",
-		Authors:       []string{"github.com/qdm12"},
-		Emails:        []string{"quentin.mcgaw@gmail.com"},
+		User:          "owodunni",
+		Repository:    "hano-scraper",
+		Authors:       []string{"github.com/owodunni"},
+		Emails:        []string{"alex.o.poole@gmail.com"},
 		Version:       buildInfo.Version,
 		Commit:        buildInfo.Commit,
 		BuildDate:     buildInfo.BuildDate,
 		Announcement:  "",
 		AnnounceExp:   announcementExpiration,
-		PaypalUser:    "qmcgaw",
-		GithubSponsor: "qdm12",
+		PaypalUser:    "",
+		GithubSponsor: "",
 	})
 	fmt.Println(strings.Join(splashLines, "\n"))
 

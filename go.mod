@@ -14,6 +14,7 @@ require (
 	github.com/qdm12/gotree v0.2.0
 	github.com/qdm12/log v0.1.0
 	github.com/stretchr/testify v1.9.0
+	go.uber.org/mock v0.4.0
 )
 
 require (

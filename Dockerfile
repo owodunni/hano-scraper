@@ -79,7 +79,7 @@ ENV HTTP_SERVER_ADDRESS=:8000 \
     STORE_POSTGRES_PASSWORD=postgres \
     STORE_POSTGRES_DATABASE=database \
     HEALTH_SERVER_ADDRESS=127.0.0.1:9999 \
-    TZ=America/Montreal
+    TZ=europe/stockholm
 COPY --chown=1000 postgres/schema.sql /schema.sql
 ARG VERSION=unknown
 ARG CREATED="an unknown date"
@@ -89,9 +89,9 @@ LABEL \
     org.opencontainers.image.version=$VERSION \
     org.opencontainers.image.created=$CREATED \
     org.opencontainers.image.revision=$COMMIT \
-    org.opencontainers.image.url="https://github.com/qdm12/go-template" \
-    org.opencontainers.image.documentation="https://github.com/qdm12/go-template/blob/main/README.md" \
-    org.opencontainers.image.source="https://github.com/qdm12/go-template" \
-    org.opencontainers.image.title="go-template" \
+    org.opencontainers.image.url="https://github.com/owodunni/hano-scraper" \
+    org.opencontainers.image.documentation="https://github.com/owodunni/hano-scraper/blob/main/README.md" \
+    org.opencontainers.image.source="https://github.com/owodunni/hano-scraper" \
+    org.opencontainers.image.title="hano-scraper" \
     org.opencontainers.image.description="SHORT_DESCRIPTION"
 COPY --from=build --chown=1000 /tmp/gobuild/app /app

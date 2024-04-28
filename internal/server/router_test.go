@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/golang/mock/gomock"
+	"go.uber.org/mock/gomock"
 	"github.com/owodunni/hano-scraper/internal/config/settings"
 	"github.com/owodunni/hano-scraper/internal/models"
 	"github.com/stretchr/testify/assert"
