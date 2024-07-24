@@ -40,19 +40,18 @@ func main() {
 	tx := db.MustBegin()
 	tx.MustExec("INSERT INTO person (first_name, last_name, email) VALUES ($1, $2, $3)", "Jason", "Moiron", "jmoiron@jmoiron.net")
 	tx.MustExec("INSERT INTO person (first_name, last_name, email) VALUES ($1, $2, $3)", "John", "Doe", "johndoeDNE@gmail.net")
-	tx.Commit()
+	err = tx.Commit()
+
+	if err != nil {
+		log.Fatalln(err)
+	}
 
 	// Selects Mr. Smith from the database
 	rows, err := db.NamedQuery(`SELECT * FROM person WHERE first_name=:fn`, map[string]interface{}{"fn": "John"})
 	if err != nil {
 		log.Fatalln(err)
 	}
-	/*var persons []Person
-	err = rows.StructScan(&persons)
-	if err != nil {
-		log.Fatalln(err)
-	}
-	fmt.Println(persons)*/
+
 	log.Printf("Rows: %v\n", rows)
 
 	var persons []Person
@@ -65,8 +64,15 @@ func main() {
 	r := chi.NewRouter()
 	r.Use(middleware.Logger)
 	r.Get("/", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("welcome"))
+		_, err := w.Write([]byte("welcome"))
+
+		if err != nil {
+			log.Fatal(err)
+		}
 	})
-	http.ListenAndServe(":3000", r)
+	err = http.ListenAndServe(":3000", r)
+	if err != nil {
+		log.Fatal(err)
+	}
 
 }
