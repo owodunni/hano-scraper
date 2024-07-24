@@ -22,7 +22,6 @@ COPY --from=mockgen /bin /go/bin/mockgen
 COPY go.mod go.sum ./
 RUN go mod download
 COPY cmd/ ./cmd/
-COPY internal/ ./internal/
 
 FROM base AS test
 # Note on the go race detector:
